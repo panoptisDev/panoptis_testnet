@@ -1,6 +1,6 @@
 # panoptis_testnet
-PulseChain Testnet
-The PulseChain Testnet is up and running. This document will guide you through connecting Metamask to the network and bootstrapping a PulseChain node of your own.
+panoptis.network testnet
+The PulseChain Testnet is up and running. This document will guide you through connecting Metamask to the network and bootstrapping a panoptis.network node of your own.
 
 Disclaimer: This is a Testnet, and issues may arise as the network or certain front-ends see increased load. The team will work diligently to address any issues as they come.
 
@@ -13,15 +13,15 @@ Follow these instructions to manually add the Testnet to your Metamask plugin. A
 1. Click the Networks dropdown and select "Custom Network"
 2. Enter the following information:
 
-Network Name: PulseChain Testnet
+Network Name: panoptis.network testnet
 
-New RPC URL: https://rpc.testnet.pulsechain.com
+New RPC URL: https://rpc.testnet.panoptis.network
 
 Chain ID: 940
 
 Currency Symbol: TPLS
 
-Block Explorer URL: https://scan.pulsechain.com
+Block Explorer URL: https://scan.panoptis.network
 
 
 
@@ -38,12 +38,12 @@ Step 2
 
 
 
-Congratulations! You are now connected to the PulseChain Testnet. Existing ethereum accounts that had balances as of block 13,224,745 (Sep-14-2021 03:48:51 PM +UTC) will have the equivalent on balance on the PulseChain Testnet.
+Congratulations! You are now connected to the panoptis.network Testnet. Existing ethereum accounts that had balances as of block 13,224,745 (Sep-14-2021 03:48:51 PM +UTC) will have the equivalent on balance on the panoptis.network Testnet.
 
-Getting tPLS to use on the PulseChain Testnet
+Getting tPLS to use on the panoptis.network Testnet
 To get tPLS you can use the tPLS faucet.
 
-Navigate to the tPLS faucet https://faucet.testnet.pulsechain.com/
+Navigate to the tPLS faucet https://faucet.testnet.panoptis.network/
 
 Connect your Metamask wallet by clicking on the button.
 Enter the address you want to send tPLS to and click the Request button.
@@ -76,7 +76,7 @@ First, ensure that the intended blockchain datadir has at least 750GB of free sp
 
 2. Init Genesis
 Run the following command to initialize the blockchain genesis:
-docker run -v /blockchain:/blockchain registry.gitlab.com/pulsechaincom/go-pulse:0.4.1 --datadir=/blockchain init /blockchain/genesis.json
+docker run -v /blockchain:/blockchain registry.gitlab.com/panoptis.network/go-panoptis:0.4.1 --datadir=/blockchain init /blockchain/genesis.json
 You should see output similar to below:
 INFO [08-24|00:56:41.561] Maximum peer count                       ETH=50 LES=0 total=50
 INFO [08-24|00:56:41.561] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
@@ -92,4 +92,4 @@ INFO [08-24|00:56:41.933] Successfully wrote genesis state         database=ligh
 
 3. Start the Pulse Node
 After genesis has been initialized, you can start the node and connect to the network:
-docker run -v /blockchain:/blockchain -P registry.gitlab.com/pulsechaincom/go-pulse:0.4.1 --datadir=/blockchain --config=/blockchain/config.toml
+docker run -v /blockchain:/blockchain -P registry.gitlab.com/panoptis.network/go-panoptis:0.4.1 --datadir=/blockchain --config=/blockchain/config.toml
