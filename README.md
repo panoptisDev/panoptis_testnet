@@ -50,7 +50,7 @@ Enter the address you want to send tPLS to and click the Request button.
 Wait up to 60 seconds to receive your tPLS.
 
 
-Connecting a PulseChain Node
+Connecting a panoptis.network Node
 
 Warning: The PulseChain Testnet includes all of the Ethereum mainnet state up to block 13,224,745. This means that the system requirements for running a node will be high, particularly the storage requirements. You should only run your own testnet node if needed for development purposes, etc...
 
@@ -90,6 +90,6 @@ INFO [08-24|00:56:41.759] Writing custom genesis block
 INFO [08-24|00:56:41.932] Persisted trie from memory database      nodes=12356 size=1.78MiB time=51.977767ms gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
 INFO [08-24|00:56:41.933] Successfully wrote genesis state         database=lightchaindata                  hash=d4e567..cb8fa3
 
-3. Start the Pulse Node
+3. Start the panoptis Node
 After genesis has been initialized, you can start the node and connect to the network:
 docker run -v /blockchain:/blockchain -P registry.gitlab.com/panoptis.network/go-panoptis:0.4.1 --datadir=/blockchain --config=/blockchain/config.toml
