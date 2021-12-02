@@ -1,6 +1,6 @@
 # panoptis_testnet
 panoptis.network testnet
-The PulseChain Testnet is up and running. This document will guide you through connecting Metamask to the network and bootstrapping a panoptis.network node of your own.
+The panoptis.network Testnet is up and running. This document will guide you through connecting Metamask to the network and bootstrapping a panoptis.network node of your own.
 
 Disclaimer: This is a Testnet, and issues may arise as the network or certain front-ends see increased load. The team will work diligently to address any issues as they come.
 
