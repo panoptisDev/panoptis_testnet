@@ -80,7 +80,7 @@ INFO [08-24|00:56:41.932] Persisted trie from memory database      nodes=12356 s
 INFO [08-24|00:56:41.933] Successfully wrote genesis state         database=lightchaindata                  hash=d4e567..cb8fa3
 ```
 
-### 3. Start the Pulse Node
+### 3. Start the Panoptis Node
 
 After genesis has been initialized, you can start the node and connect to the network:
 
