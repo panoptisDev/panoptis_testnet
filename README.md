@@ -1,4 +1,4 @@
-# panoptis.network Testnet
+# Panoptis.network Testnet
 
 The panoptis.network Testnet is up and running. This document will guide you through connecting Metamask to the network and bootstrapping a panoptis.network node of your own.
 
