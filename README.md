@@ -1,6 +1,6 @@
-# PulseChain Testnet
+# panoptis.network Testnet
 
-The PulseChain Testnet is up and running. This document will guide you through connecting Metamask to the network and bootstrapping a PulseChain node of your own.
+The panoptis.network Testnet is up and running. This document will guide you through connecting Metamask to the network and bootstrapping a panoptis.network node of your own.
 
 > **Disclaimer**: This is a **Testnet**, and issues may arise as the network or certain front-ends see increased load. The team will work diligently to address any issues as they come.
 
@@ -13,31 +13,31 @@ Follow these instructions to manually add the Testnet to your Metamask plugin. A
 **1. Click the Networks dropdown and select "Custom Network"**
 
 **2. Enter the following information:**
-- Network Name: `PulseChain Testnet`
-- New RPC URL: `https://rpc.testnet.pulsechain.com`
-- Chain ID: `940`
-- Currency Symbol: `TPLS`
-- Block Explorer URL: `https://scan.pulsechain.com`
+- Network Name: `panoptis.network Testnet`
+- New RPC URL: `https://rpc.testnet.panoptis.network`
+- Chain ID: `188`
+- Currency Symbol: `PANT`
+- Block Explorer URL: `https://scan.panoptis.network`
 
 |   Step 1    |   Step 2    |
 | ----------- | ----------- |
 ![Metamask step1](images/step1.png) | ![Metamask step2](images/step2.png) |
 
-**Congratulations**! You are now connected to the PulseChain Testnet. Existing ethereum accounts that had balances as of block `13,224,745` (*Sep-14-2021 03:48:51 PM +UTC*) will have the equivalent on balance on the PulseChain Testnet.
+**Congratulations**! You are now connected to the panoptis.network Testnet. Existing ethereum accounts that had balances as of block `13,224,745` (*Sep-14-2021 03:48:51 PM +UTC*) will have the equivalent on balance on the panoptis.network Testnet.
 
-## Getting tPLS to use on the PulseChain Testnet
+## Getting PANT to use on the panoptis.network Testnet
 
-To get tPLS you can use the tPLS faucet.
+To get PANT you can use the PANT faucet.
 
-1. Navigate to the tPLS faucet https://faucet.testnet.pulsechain.com/
+1. Navigate to the PANT faucet https://faucet.testnet.panoptis.network/
 2. Connect your Metamask wallet by clicking on the button.
-3. Enter the address you want to send tPLS to and click the `Request` button.
-4. Wait up to 60 seconds to receive your tPLS.
+3. Enter the address you want to send PANT to and click the `Request` button.
+4. Wait up to 60 seconds to receive your PANT.
 
 
-## Connecting a PulseChain Node
+## Connecting a panoptis.network Node
 
-> **Warning**: The PulseChain Testnet includes **all** of the Ethereum mainnet state up to block `13,224,745`. This means that the system requirements for running a node will be high, particularly the storage requirements. You should only run your own testnet node if needed for development purposes, etc...
+> **Warning**: The panoptis.network Testnet includes **all** of the Ethereum mainnet state up to block `13,224,745`. This means that the system requirements for running a node will be high, particularly the storage requirements. You should only run your own testnet node if needed for development purposes, etc...
 
 HARDWARE
 - You will need at least 750 GB of free storage to store the synchronized chain.
@@ -62,7 +62,7 @@ First, ensure that the intended blockchain datadir has at least 750GB of free sp
 
 Run the following command to initialize the blockchain genesis:
 ```shell
-docker run -v /blockchain:/blockchain registry.gitlab.com/pulsechaincom/go-pulse:0.4.1 --datadir=/blockchain init /blockchain/genesis.json
+docker run -v /blockchain:/blockchain registry.gitlab.com/panoptis.networkcom/go-pulse:0.4.1 --datadir=/blockchain init /blockchain/genesis.json
 ```
 
 You should see output similar to below:
@@ -85,5 +85,5 @@ INFO [08-24|00:56:41.933] Successfully wrote genesis state         database=ligh
 After genesis has been initialized, you can start the node and connect to the network:
 
 ```shell
-docker run -v /blockchain:/blockchain -P registry.gitlab.com/pulsechaincom/go-pulse:0.4.1 --datadir=/blockchain --config=/blockchain/config.toml
+docker run -v /blockchain:/blockchain -P registry.gitlab.com/panoptis.networkcom/go-pulse:0.4.1 --datadir=/blockchain --config=/blockchain/config.toml
 ```
