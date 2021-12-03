@@ -85,5 +85,5 @@ INFO [08-24|00:56:41.933] Successfully wrote genesis state         database=ligh
 After genesis has been initialized, you can start the node and connect to the network:
 
 ```shell
-docker run -v /blockchain:/blockchain -P registry.gitlab.com/panoptis.networkcom/go-pulse:0.4.1 --datadir=/blockchain --config=/blockchain/config.toml
+docker run -v /blockchain:/blockchain -P registry.gitlab.com/panoptis.networkcom/go-panoptis:0.4.1 --datadir=/blockchain --config=/blockchain/config.toml
 ```
