@@ -62,7 +62,7 @@ First, ensure that the intended blockchain datadir has at least 750GB of free sp
 
 Run the following command to initialize the blockchain genesis:
 ```shell
-docker run -v /blockchain:/blockchain registry.gitlab.com/panoptis.networkcom/go-pulse:0.4.1 --datadir=/blockchain init /blockchain/genesis.json
+docker run -v /blockchain:/blockchain registry.gitlab.com/panoptis.networkcom/go-panoptis:0.4.1 --datadir=/blockchain init /blockchain/genesis.json
 ```
 
 You should see output similar to below:
