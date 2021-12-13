@@ -1,5 +1,5 @@
 [Eth]
-NetworkId = 940
+NetworkId = 188
 SyncMode = "snap"
 NoPruning = false
 NoPrefetch = false
